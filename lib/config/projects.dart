@@ -80,14 +80,17 @@ final List<Project> project = [
   Project(
       name: 'Kharedi Now',
       image: Assets.kharedi_now,
-      description: 'A Grocery app for the city of Latur.'),
+      description: 'A Grocery app for the city of Latur.',
+      link: 'https://play.google.com/store/apps/details?id=com.wheelierepairs'),
   Project(
       name: 'Rajasthan Tourism',
       image: Assets.rajasthan_tourism,
       description:
-          'A app built using Cordova which had info about Rajasthan and its tourism destinations'),
+          'A app built using Cordova which had info about Rajasthan and its tourism destinations',
+      link: 'https://play.google.com/store/apps/details?id=com.wheelierepairs'),
   Project(
       name: 'Railenq',
       image: Assets.railenq,
-      description: 'RailENQ is an app for trains and Railway Enquiries.'),
+      description: 'RailENQ is an app for trains and Railway Enquiries.',
+      link: 'https://play.google.com/store/apps/details?id=com.wheelierepairs'),
 ];

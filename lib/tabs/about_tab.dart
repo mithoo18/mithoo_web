@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
+import 'dart:html' as html;
+import 'package:mithoo_web/config/constants.dart';
+import 'package:mithoo_web/widgets/theme_inherited_widget.dart';
 
 class AboutTab extends StatelessWidget {
   @override
@@ -43,7 +46,7 @@ class AboutTab extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
@@ -52,7 +55,7 @@ class AboutTab extends StatelessWidget {
                     onPressed: () => html.window
                         .open(Constants.PROFILE_GITHUB, 'adityadroid'),
                   ),
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
@@ -61,14 +64,11 @@ class AboutTab extends StatelessWidget {
                     onPressed: () => html.window
                         .open(Constants.PROFILE_TWITTER, 'adityadroid'),
                   ),
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset(
-                            ThemeSwitcher.of(context).isDarkModeOn
-                                ? Assets.medium
-                                : Assets.medium_light)),
+                        child: Image.asset(Assets.medium)),
                     label: Text('Medium'),
                     onPressed: () => html.window
                         .open(Constants.PROFILE_MEDIUM, 'adityadroid'),
@@ -79,7 +79,7 @@ class AboutTab extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
@@ -88,7 +88,7 @@ class AboutTab extends StatelessWidget {
                     onPressed: () => html.window
                         .open(Constants.PROFILE_INSTAGRAM, 'adityadroid'),
                   ),
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
@@ -97,7 +97,7 @@ class AboutTab extends StatelessWidget {
                     onPressed: () => html.window
                         .open(Constants.PROFILE_FACEBOOK, 'adityadroid'),
                   ),
-                  FlatButton.icon(
+                  TextButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,

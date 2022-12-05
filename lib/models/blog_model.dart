@@ -7,11 +7,11 @@ class Blog {
   final String uniqueSlug;
   final String imageId;
   Blog(
-      {@required this.id,
-      @required this.title,
-      @required this.subtitle,
-      @required this.uniqueSlug,
-      @required this.imageId});
+      {required this.id,
+      required this.title,
+      required this.subtitle,
+      required this.uniqueSlug,
+      required this.imageId});
 
   factory Blog.fromJson(Map<String, dynamic> json) {
     final id = json['id'];

@@ -1,6 +1,9 @@
 import 'dart:convert';
+import 'package:mithoo_web/models/blog_model.dart';
+import 'package:http/http.dart' as http;
+
 class ApiProvider {
-  Future<List<Blog>> getBlogs() async {
+  Future<List<Blog>?> getBlogs() async {
     final response = await http
         .get(Uri.https('adityadroid-medium.herokuapp.com', '/@adityadroid'));
 

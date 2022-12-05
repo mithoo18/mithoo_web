@@ -7,8 +7,8 @@ class Project {
   String link;
 
   Project(
-      {@required this.image,
-      @required this.name,
-      @required this.description,
-      this.link});
+      {required this.image,
+      required this.name,
+      required this.description,
+      required this.link});
 }
