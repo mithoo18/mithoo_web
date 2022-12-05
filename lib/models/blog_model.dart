@@ -6,7 +6,6 @@ class Blog {
   final String subtitle;
   final String uniqueSlug;
   final String imageId;
-
   Blog(
       {@required this.id,
       @required this.title,
@@ -17,8 +16,8 @@ class Blog {
   factory Blog.fromJson(Map<String, dynamic> json) {
     final id = json['id'];
     final title = json['title'];
-    final subtitle = json['subtitle'];
-    final UniqueSlug = json['uniqueSlog'];
+    final subtitle = json['content']['subtitle'];
+    final uniqueSlug = json['uniqueSlug'];
     final imageId = json['virtuals']['previewImage']['imageId'];
     return Blog(
         id: id,

@@ -9,7 +9,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectIndex = 0;
-  List<Widget> tabWidgets = <Widget>[AboutTab(), BlogTab(), ProjectsTab()];
+  List<Widget> tabWidgets = <Widget>[
+    AboutTab(),
+    BlogTab(),
+    ProjectsTab()
+  ];
 
   @override
   void initState() {
