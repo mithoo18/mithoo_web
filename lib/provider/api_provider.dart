@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 class ApiProvider {
   Future<List<Blog>> getBlogs() async {
     final response = await http
