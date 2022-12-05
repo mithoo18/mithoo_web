@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:mithoo_web/widgets/blog_widget.dart';
 import 'package:mithoo_web/widgets/responsive_widget.dart';
 import 'package:mithoo_web/config/constants.dart';
+import 'package:mithoo_web/models/blog_model.dart';
 
 class BlogTab extends StatefulWidget {
   @override

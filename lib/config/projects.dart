@@ -1,7 +1,7 @@
 import 'package:mithoo_web/models/project_model.dart';
 import 'assets.dart';
 
-final List<Project> project = [
+final List<Project> projects = [
   Project(
       name: 'myBrightlink',
       image: Assets.mybrightlink,
